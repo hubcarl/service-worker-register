@@ -1,0 +1,10 @@
+test/fixtures
+coverage
+public
+test/web
+dist
+node_modules
+.spec.js
+coverage
+.nyc_output
+*.test.js
