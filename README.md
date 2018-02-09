@@ -32,8 +32,37 @@ npm i service-worker-register --save
 
 ```js
 const serviceWorkerRegister = require('service-worker-register');
+// The service-worker.js name will get really url address by sw-manifest.json file
 serviceWorkerRegister.register('service-worker.js');
 ```
+
+## Configuration
+
+`serviceWorkerRegister.register(filename, options)`:
+
+- `options.manifestUrl`: {String} default: `/public/sw-manifest.json` - service worker filename mapping file
+- `options.report`: {Function} optional - service worker register error report interface 
+
+## Function
+
+The plugin depend on [webpack-manifest-resource-plugin](https://github.com/hubcarl/webpack-manifest-resource-plugin)
+
+- `webpack-manifest-resource-plugin` inject `sw-manifest.json` file content to global var `SERVICE_WORKER_MANIFEST` 
+
+
+```
+// sw-manifest.js
+{
+  "config": {
+    "localPublicPath": "/public/",
+    "publicPath": "/public/"
+  },
+  "service-worker.js": "/public/service-worker.js"
+}
+```
+
+- if `SERVICE_WORKER_MANIFEST` is be inject, use this configuration directly, otherwise launch the network based on `options.manifestUrl` URL 
+
 
 ## License
 
