@@ -19,7 +19,7 @@
 [download-image]: https://img.shields.io/npm/dm/service-worker-register.svg?style=flat-square
 [download-url]: https://npmjs.org/package/service-worker-register
 
-service worker register by manifest[webpack-manifest-resource-plugin](https://github.com/hubcarl/webpack-manifest-resource-plugin)
+service worker register by webpack service worker manifest [service-worker-precache-webpack-plugin](https://github.com/hubcarl/service-worker-precache-webpack-plugin)
 
 
 ## Install
@@ -45,7 +45,7 @@ serviceWorkerRegister.register('service-worker.js');
 
 ## Function
 
-The plugin depend on [webpack-manifest-resource-plugin](https://github.com/hubcarl/webpack-manifest-resource-plugin)
+The plugin depend on [service-worker-precache-webpack-plugin](https://github.com/hubcarl/service-worker-precache-webpack-plugin)
 
 - `webpack-manifest-resource-plugin` inject `sw-manifest.json` file content to global var `SERVICE_WORKER_MANIFEST` 
 
