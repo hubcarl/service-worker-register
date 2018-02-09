@@ -61,7 +61,7 @@ The plugin depend on [webpack-manifest-resource-plugin](https://github.com/hubca
 }
 ```
 
-- if `SERVICE_WORKER_MANIFEST` is be inject, use this configuration directly, otherwise launch the network based on `options.manifestUrl` URL 
+- if `SERVICE_WORKER_MANIFEST` is be inject, use this configuration directly, otherwise launch the network based on `options.manifestUrl` URL 
 
 
 ## License
