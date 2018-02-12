@@ -32,7 +32,7 @@ npm i service-worker-register --save
 
 ```js
 const serviceWorkerRegister = require('service-worker-register');
-// The service-worker.js name will get really url address by sw-manifest.json file
+// The service-worker.js name will get really url address by sw-mapping.json file
 serviceWorkerRegister.register('service-worker.js');
 ```
 
@@ -40,14 +40,14 @@ serviceWorkerRegister.register('service-worker.js');
 
 `serviceWorkerRegister.register(filename, options)`:
 
-- `options.manifestUrl`: {String} default: `/public/sw-manifest.json` - service worker filename mapping file
+- `options.manifestUrl`: {String} default: `/public/sw-mapping.json` - service worker filename mapping file
 - `options.report`: {Function} optional - service worker register error report interface 
 
 ## Function
 
 The plugin depend on [service-worker-precache-webpack-plugin](https://github.com/hubcarl/service-worker-precache-webpack-plugin)
 
-- `webpack-manifest-resource-plugin` inject `sw-manifest.json` file content to global var `SERVICE_WORKER_MANIFEST` 
+- `webpack-manifest-resource-plugin` inject `sw-mapping.json` file content to global var `SERVICE_WORKER_MANIFEST` 
 
 
 ```
@@ -57,7 +57,7 @@ The plugin depend on [service-worker-precache-webpack-plugin](https://github.com
     "localPublicPath": "/public/",
     "publicPath": "/public/"
   },
-  "service-worker.js": "/public/service-worker.js"
+  "service-worker.js": "service-worker.4434ddf3js"
 }
 ```
 
