@@ -1,9 +1,8 @@
 {
   "name": "service-worker-register",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "service worker register by webpack-manifest-resource-plugin manifest",
   "main": "dist/index.js",
-  "module": "index.js",
   "keywords": [
     "service-worker",
     "service-worker-register"
