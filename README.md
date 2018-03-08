@@ -40,6 +40,7 @@ serviceWorkerRegister.register('service-worker.js');
 
 `serviceWorkerRegister.register(filename, options)`:
 
+- `options.scope`: {String} default: `/` - service worker scope
 - `options.manifestUrl`: {String} default: `/public/sw-mapping.json` - service worker filename mapping file
 - `options.report`: {Function} optional - service worker register error report interface 
 
